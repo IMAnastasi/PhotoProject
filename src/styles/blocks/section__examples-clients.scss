@@ -1,0 +1,76 @@
+.section__examples-clients {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+  background-color: $color-light2-brown;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+.examples-clients__subtitle {
+  font-size: 20px;
+  color: $color-dark-text;
+  font-weight: 400;
+}
+
+.examples-clients__slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.examples-clients__slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.examples-clients__slider-item--image {
+  width: 315px;
+  height: 400px;
+}
+
+.examples-clients__slider-item--title {
+  font-size: 20px;
+  color: $color-dark-text;
+  font-weight: 400;
+}
+
+.examples-clients__slider-item--subtitle {
+  font-size: 16px;
+  color: $color-dark-text;
+  font-weight: 400;
+}
+
+.examples-clients__slider-item--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 60px;
+  border-radius: 10px;
+  color: $color-white;
+  cursor: pointer;
+  background-color: $color-orange;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  transition: .3s ease-in-out all;
+
+  &:hover {
+    background-color: $color-brown;
+    box-shadow: 3px 3px 29px 0 $color-brown;
+  }
+}
