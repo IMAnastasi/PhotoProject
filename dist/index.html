@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAR ART CANVAS</title>
+<script defer src="bundle.js"></script></head>
+<body>
+<header>
+    <div class="header__wrapper">
+        <div class="header__logo-btns">
+            <div class="logo">
+                <img src="27eab2fa6b911f84d3f1.svg" alt="Лого">
+            </div>
+            <div class="header__link-buttons">
+                <a href="#" class="button-link button-link--brown">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.26758 8.49121L7.65039 5.97559H5.2168V4.33496C5.2168 3.62402 5.54492 2.96777 6.63867 2.96777H7.75977V0.807617C7.75977 0.807617 6.74805 0.616211 5.79102 0.616211C3.79492 0.616211 2.48242 1.84668 2.48242 4.03418V5.97559H0.240234V8.49121H2.48242V14.6162H5.2168V8.49121H7.26758Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="button-link button-link--brown">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.01562 4.00684C5.01562 4.00684 3.42188 5.63184 3.42188 7.60059C3.42188 9.60059 5.01562 11.1943 7.01562 11.1943C8.98438 11.1943 10.6094 9.60059 10.6094 7.60059C10.6094 5.63184 8.98438 4.00684 7.01562 4.00684ZM7.01562 9.94434C5.73438 9.94434 4.67188 8.91309 4.67188 7.60059C4.67188 6.31934 5.70312 5.28809 7.01562 5.28809C8.29688 5.28809 9.32812 6.31934 9.32812 7.60059C9.32812 8.91309 8.29688 9.94434 7.01562 9.94434ZM11.5781 3.88184C11.5781 3.41309 11.2031 3.03809 10.7344 3.03809C10.2656 3.03809 9.89062 3.41309 9.89062 3.88184C9.89062 4.35059 10.2656 4.72559 10.7344 4.72559C11.2031 4.72559 11.5781 4.35059 11.5781 3.88184ZM13.9531 4.72559C13.8906 3.60059 13.6406 2.60059 12.8281 1.78809C12.0156 0.975586 11.0156 0.725586 9.89062 0.663086C8.73438 0.600586 5.26562 0.600586 4.10938 0.663086C2.98438 0.725586 2.01562 0.975586 1.17188 1.78809C0.359375 2.60059 0.109375 3.60059 0.046875 4.72559C-0.015625 5.88184 -0.015625 9.35059 0.046875 10.5068C0.109375 11.6318 0.359375 12.6006 1.17188 13.4443C2.01562 14.2568 2.98438 14.5068 4.10938 14.5693C5.26562 14.6318 8.73438 14.6318 9.89062 14.5693C11.0156 14.5068 12.0156 14.2568 12.8281 13.4443C13.6406 12.6006 13.8906 11.6318 13.9531 10.5068C14.0156 9.35059 14.0156 5.88184 13.9531 4.72559ZM12.4531 11.7256C12.2344 12.3506 11.7344 12.8193 11.1406 13.0693C10.2031 13.4443 8.01562 13.3506 7.01562 13.3506C5.98438 13.3506 3.79688 13.4443 2.89062 13.0693C2.26562 12.8193 1.79688 12.3506 1.54688 11.7256C1.17188 10.8193 1.26562 8.63184 1.26562 7.60059C1.26562 6.60059 1.17188 4.41309 1.54688 3.47559C1.79688 2.88184 2.26562 2.41309 2.89062 2.16309C3.79688 1.78809 5.98438 1.88184 7.01562 1.88184C8.01562 1.88184 10.2031 1.78809 11.1406 2.16309C11.7344 2.38184 12.2031 2.88184 12.4531 3.47559C12.8281 4.41309 12.7344 6.60059 12.7344 7.60059C12.7344 8.63184 12.8281 10.8193 12.4531 11.7256Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="header__list-menu">
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Портрет по фото</span>
+            </div>
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Печать фото на холсте</span>
+            </div>
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Коллажи</span>
+            </div>
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Идеи</span>
+            </div>
+        </div>
+        <div class="header__user-buttons">
+            <a href="#" class="button-link button-link--white">
+                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.86153 2.06396C7.58179 2.06396 6.55664 3.08911 6.55664 4.36885V6.59024C6.55664 7.86998 7.58179 8.89513 8.86153 8.89513C10.1413 8.89513 11.1664 7.86998 11.1664 6.59024V4.36885C11.1664 3.08911 10.1413 2.06396 8.86153 2.06396ZM5.05664 4.36885C5.05664 2.26068 6.75336 0.563965 8.86153 0.563965C10.9697 0.563965 12.6664 2.26068 12.6664 4.36885V6.59024C12.6664 8.69841 10.9697 10.3951 8.86153 10.3951C6.75336 10.3951 5.05664 8.69841 5.05664 6.59024V4.36885ZM1.87958 19.1686H16.12C15.7425 15.3929 13.0461 12.6156 10.0004 12.6156H7.97524C4.95341 12.6156 2.25638 15.3916 1.87958 19.1686ZM0.33603 19.9068C0.410245 15.1808 3.70291 11.1156 7.97524 11.1156H10.0004C14.2955 11.1156 17.5885 15.1791 17.6637 19.9067C17.6669 20.1076 17.5894 20.3015 17.4484 20.4447C17.3074 20.588 17.1148 20.6686 16.9138 20.6686H1.08594C0.884984 20.6686 0.692436 20.588 0.55146 20.4448C0.410485 20.3016 0.332875 20.1078 0.33603 19.9068Z"
+                          fill="#FA7846"/>
+                </svg>
+            </a>
+            <a href="#" class="button-link button-link--orange">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.09545 4.7124H1V3.2124H3.10237C3.99119 3.21754 4.78673 3.77965 5.07571 4.62374L5.88095 6.87364H19C19.2334 6.87364 19.4535 6.98228 19.5954 7.16754C19.7373 7.3528 19.7849 7.59357 19.7241 7.8189L17.9292 14.4757C17.8409 14.803 17.5441 15.0304 17.2051 15.0304H7.73527C7.41849 15.0304 7.13587 14.8314 7.02913 14.5332L3.65713 5.11157C3.57859 4.87958 3.35588 4.71463 3.09545 4.7124ZM6.4178 8.37364L8.26343 13.5304H16.6305L18.021 8.37364H6.4178Z"
+                          fill="white"/>
+                    <path d="M8.07249 21.2698C9.00243 21.2698 9.7563 20.5247 9.7563 19.6056C9.7563 18.6865 9.00243 17.9414 8.07249 17.9414C7.14254 17.9414 6.38867 18.6865 6.38867 19.6056C6.38867 20.5247 7.14254 21.2698 8.07249 21.2698Z"
+                          fill="white"/>
+                    <path d="M17.1643 21.2698C18.0942 21.2698 18.8481 20.5247 18.8481 19.6056C18.8481 18.6865 18.0942 17.9414 17.1643 17.9414C16.2343 17.9414 15.4805 18.6865 15.4805 19.6056C15.4805 20.5247 16.2343 21.2698 17.1643 21.2698Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <div class="menu-burger">
+                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.333496" y="0.25" width="18" height="1.5" fill="#1E2533"/>
+                    <rect x="0.333496" y="5.25" width="18" height="1.5" fill="#1E2533"/>
+                    <rect x="0.333496" y="10.25" width="18" height="1.5" fill="#1E2533"/>
+                </svg>
+            </div>
+        </div>
+        <div class="header__list-menu mobile-menu">
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Портрет по фото</span>
+            </div>
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Печать фото на холсте</span>
+            </div>
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Коллажи</span>
+            </div>
+            <div class="header__list-menu--item">
+                <span class="header__list-menu--item--title">Идеи</span>
+            </div>
+            <div class="header__link-buttons">
+                <a href="#" class="button-link button-link--brown">
+                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.26758 8.49121L7.65039 5.97559H5.2168V4.33496C5.2168 3.62402 5.54492 2.96777 6.63867 2.96777H7.75977V0.807617C7.75977 0.807617 6.74805 0.616211 5.79102 0.616211C3.79492 0.616211 2.48242 1.84668 2.48242 4.03418V5.97559H0.240234V8.49121H2.48242V14.6162H5.2168V8.49121H7.26758Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="button-link button-link--brown">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.01562 4.00684C5.01562 4.00684 3.42188 5.63184 3.42188 7.60059C3.42188 9.60059 5.01562 11.1943 7.01562 11.1943C8.98438 11.1943 10.6094 9.60059 10.6094 7.60059C10.6094 5.63184 8.98438 4.00684 7.01562 4.00684ZM7.01562 9.94434C5.73438 9.94434 4.67188 8.91309 4.67188 7.60059C4.67188 6.31934 5.70312 5.28809 7.01562 5.28809C8.29688 5.28809 9.32812 6.31934 9.32812 7.60059C9.32812 8.91309 8.29688 9.94434 7.01562 9.94434ZM11.5781 3.88184C11.5781 3.41309 11.2031 3.03809 10.7344 3.03809C10.2656 3.03809 9.89062 3.41309 9.89062 3.88184C9.89062 4.35059 10.2656 4.72559 10.7344 4.72559C11.2031 4.72559 11.5781 4.35059 11.5781 3.88184ZM13.9531 4.72559C13.8906 3.60059 13.6406 2.60059 12.8281 1.78809C12.0156 0.975586 11.0156 0.725586 9.89062 0.663086C8.73438 0.600586 5.26562 0.600586 4.10938 0.663086C2.98438 0.725586 2.01562 0.975586 1.17188 1.78809C0.359375 2.60059 0.109375 3.60059 0.046875 4.72559C-0.015625 5.88184 -0.015625 9.35059 0.046875 10.5068C0.109375 11.6318 0.359375 12.6006 1.17188 13.4443C2.01562 14.2568 2.98438 14.5068 4.10938 14.5693C5.26562 14.6318 8.73438 14.6318 9.89062 14.5693C11.0156 14.5068 12.0156 14.2568 12.8281 13.4443C13.6406 12.6006 13.8906 11.6318 13.9531 10.5068C14.0156 9.35059 14.0156 5.88184 13.9531 4.72559ZM12.4531 11.7256C12.2344 12.3506 11.7344 12.8193 11.1406 13.0693C10.2031 13.4443 8.01562 13.3506 7.01562 13.3506C5.98438 13.3506 3.79688 13.4443 2.89062 13.0693C2.26562 12.8193 1.79688 12.3506 1.54688 11.7256C1.17188 10.8193 1.26562 8.63184 1.26562 7.60059C1.26562 6.60059 1.17188 4.41309 1.54688 3.47559C1.79688 2.88184 2.26562 2.41309 2.89062 2.16309C3.79688 1.78809 5.98438 1.88184 7.01562 1.88184C8.01562 1.88184 10.2031 1.78809 11.1406 2.16309C11.7344 2.38184 12.2031 2.88184 12.4531 3.47559C12.8281 4.41309 12.7344 6.60059 12.7344 7.60059C12.7344 8.63184 12.8281 10.8193 12.4531 11.7256Z"
+                              fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section__banner">
+        <div class="wrapper">
+            <div class="banner__content">
+                <div class="banner__content-title title-fade">
+                    Портрет
+                    <br><span class="text-orange">Дрим Арт</span>
+                </div>
+                <div class="banner__content-item">
+                    <img src="0b028f56e001969b5093.svg" alt="paint">
+                    <div class="banner__content-item--text title-fade">
+                        <span class="text-orange">Всегда</span>
+                        похожие лица!
+                    </div>
+                </div>
+                <div class="banner__content-item">
+                    <img src="0b028f56e001969b5093.svg" alt="paint">
+                    <div class="banner__content-item--text title-fade">
+                        Каждый заказ нарисован
+                        <span class="text-orange">рукой художника!</span>
+                    </div>
+                </div>
+                <div class="banner__content-item">
+                    <img src="0b028f56e001969b5093.svg" alt="paint">
+                    <div class="banner__content-item--text title-fade">
+                        <span class="text-orange">Красивая и стильная картина</span>
+                        из любой обычной фотографии!
+                    </div>
+                </div>
+                <div class="examples-clients__slider-item--button banner__content-button scroll-to-form">Заказать портрет</div>
+            </div>
+            <div class="banner__image">
+                <img class="lozad" data-src="e01c1076a693ba1ff2ac.png" alt="banner">
+            </div>
+        </div>
+    </section>
+    <section class="section__info">
+        <div class="wrapper">
+            <div class="section__title section__title--dark title-fade">Всё проще и доступнее чем кажется</div>
+            <div class="info__group-buttons">
+                <div class="info__group-buttons__item">
+                    Портрет на холсте
+                </div>
+                <div class="info__group-buttons__item">
+                    Что это такое
+                </div>
+                <div class="info__group-buttons__item">
+                    Требование к снимку
+                </div>
+                <div class="info__group-buttons__item">
+                    Цены и размеры
+                </div>
+                <div class="info__group-buttons__item">
+                    Доставка и время
+                </div>
+            </div>
+            <div class="info__container">
+                <div class="info__content">
+                    <div class="info__content__image">
+                        <img class="lozad" data-src="b85f700f77d857bd2a04.png" alt="Главное изображение">
+                    </div>
+                    <div class="info__content__details">
+                        <div class="info__content__details__item">
+                            <div class="info__content__details__item--image">
+                                <img class="lozad" data-src="2e05e050ceb3167f4836.png" alt="Изображение 1">
+                            </div>
+                            <div class="info__content__details__item--text">
+                                Портрет рисует художник.
+                                <span class="info__content__details__item--text-orange">Детально прорисовывает все части портрета!</span>
+                            </div>
+                        </div>
+                        <div class="info__content__details__item">
+                            <div class="info__content__details__item--image">
+                                <img class="lozad" data-src="40c8dac3d7da6008f224.png" alt="Изображение 2">
+                            </div>
+                            <div class="info__content__details__item--text">
+                                Покрытие Вашей картины защитным
+                                <span class="info__content__details__item--text-orange">акриловым лаком или текстурным гелем.</span>
+                            </div>
+                        </div>
+                        <div class="info__content__details__item">
+                            <div class="info__content__details__item--image">
+                                <img class="lozad" data-src="90c2abb8d05e64224bd5.png" alt="Изображение 3">
+                            </div>
+                            <div class="info__content__details__item--text">
+                                Яркость и прочность материалов
+                                <span class="info__content__details__item--text-orange">более 100 лет!</span>
+                                Холст сохранит свое натяжение и не провиснет!
+                            </div>
+                        </div>
+                        <div class="info__content__details__item">
+                            <div class="info__content__details__item--image">
+                                <img class="lozad" data-src="ae820b609554602e5b2d.png" alt="Изображение 4">
+                            </div>
+                            <div class="info__content__details__item--text">
+                                Каждая картина
+                                <span class="info__content__details__item--text-orange">упаковывается подарочную бумагу</span>
+                                и украшается бантом!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__examples-portraits">
+        <div class="wrapper">
+            <div class="section__title section__title--light">Примеры наших портретов</div>
+            <div class="examples-portraits__container">
+                <div class="examples-portraits__main">
+                    <div class="examples-portraits__title">ДО/ПОСЛЕ</div>
+                    <div class="examples-portraits__subtitle">Mēs mākam izdarīt skaisti, pilnībā saglabājot portretisku
+                        līdzību
+                    </div>
+                    <div class="examples-portraits__image">
+                        <img class="lozad" data-src="08d62447e72ff0bf5847.jpg" alt="Основное изображение примера портрета">
+                    </div>
+                </div>
+                <div class="examples-portraits__content">
+                    <div class="examples-portraits__title">ФОТО РАБОТ</div>
+                    <div class="swiper-container">
+                        <div class="swiper-button--prev">
+                            <svg width="48" height="51" viewBox="0 0 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_0_5924)">
+                                    <circle cx="24" cy="24.5742" r="24" fill="white"/>
+                                </g>
+                                <path d="M27.2335 31.1885C27.334 31.0881 27.3842 30.9726 27.3842 30.842C27.3842 30.7114 27.334 30.5959 27.2335 30.4954L21.3122 24.5741L27.2335 18.6528C27.334 18.5524 27.3842 18.4368 27.3842 18.3063C27.3842 18.1757 27.334 18.0602 27.2335 17.9597L26.4802 17.2064C26.3797 17.1059 26.2642 17.0557 26.1336 17.0557C26.0031 17.0557 25.8876 17.1059 25.7871 17.2064L18.7659 24.2276C18.6655 24.328 18.6152 24.4435 18.6152 24.5741C18.6152 24.7047 18.6655 24.8202 18.7659 24.9207L25.7871 31.9419C25.8876 32.0423 26.0031 32.0925 26.1336 32.0925C26.2642 32.0925 26.3797 32.0423 26.4802 31.9419L27.2335 31.1885Z"
+                                      fill="#FC8C5F"/>
+                                <defs>
+                                    <filter id="filter0_d_0_5924" x="0" y="0.574219" width="48" height="50" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                       result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.611765 0 0 0 0 0.647059 0 0 0 0 0.709804 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_5924"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_5924" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="examples-portraits__slider">
+                            <div class="examples-portraits_wrapper swiper-wrapper">
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="d0b6662c734d7ecc4de9.png" alt="Слайд 1">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="dd8f66b9e4fb55c32ee7.png" alt="Слайд 2">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="d0b6662c734d7ecc4de9.png" alt="Слайд 3">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="dd8f66b9e4fb55c32ee7.png" alt="Слайд 4">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="d0b6662c734d7ecc4de9.png" alt="Слайд 5">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="dd8f66b9e4fb55c32ee7.png" alt="Слайд 6">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="d0b6662c734d7ecc4de9.png" alt="Слайд 7">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="dd8f66b9e4fb55c32ee7.png" alt="Слайд 8">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="d0b6662c734d7ecc4de9.png" alt="Слайд 9">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="dd8f66b9e4fb55c32ee7.png" alt="Слайд 10">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="d0b6662c734d7ecc4de9.png" alt="Слайд 11">
+                                </div>
+                                <div class="examples-portraits__slider--item swiper-slide">
+                                    <img src="dd8f66b9e4fb55c32ee7.png" alt="Слайд 12">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button--next">
+                            <svg width="48" height="51" viewBox="0 0 48 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_0_5923)">
+                                    <circle cx="24" cy="24.5742" r="24" fill="white"/>
+                                    <circle cx="24" cy="24.5742" r="24" fill="url(#paint0_linear_0_5923)"/>
+                                </g>
+                                <path d="M20.7665 31.1885C20.666 31.0881 20.6158 30.9726 20.6158 30.842C20.6158 30.7114 20.666 30.5959 20.7665 30.4954L26.6878 24.5741L20.7665 18.6528C20.666 18.5524 20.6158 18.4368 20.6158 18.3063C20.6158 18.1757 20.666 18.0602 20.7665 17.9597L21.5198 17.2064C21.6203 17.1059 21.7358 17.0557 21.8664 17.0557C21.9969 17.0557 22.1124 17.1059 22.2129 17.2064L29.2341 24.2276C29.3345 24.328 29.3848 24.4435 29.3848 24.5741C29.3848 24.7047 29.3345 24.8202 29.2341 24.9207L22.2129 31.9419C22.1124 32.0423 21.9969 32.0925 21.8664 32.0925C21.7358 32.0925 21.6203 32.0423 21.5198 31.9419L20.7665 31.1885Z"
+                                      fill="white"/>
+                                <defs>
+                                    <filter id="filter0_d_0_5923" x="0" y="0.574219" width="48" height="50" filterUnits="userSpaceOnUse"
+                                            color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                       result="hardAlpha"/>
+                                        <feOffset dy="2"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.908333 0 0 0 0 0.443806 0 0 0 0 0.268715 0 0 0 1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_5923"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_5923" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear_0_5923" x1="0" y1="24.5742" x2="48" y2="24.5742"
+                                                    gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FC8C5F"/>
+                                        <stop offset="1" stop-color="#FA7846"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__other-styles">
+        <div class="wrapper">
+            <div class="section__title section__title--dark">Бесплатная помощь дизайнера</div>
+            <div class="other-styles__slider">
+                <div class="other-styles__slider-wrapper">
+                    <div class="other-styles__slider-slide">
+                        <div class="other-styles__slider-slide--title">Бьюти Арт</div>
+                        <div class="other-styles__slider-slide--image">
+                            <img class="lozad" data-src="7e2589493cdb11f9124d.png" alt="slide">
+                        </div>
+                        <div class="other-styles__slider-slide--text">
+                            Бьюти Арт – один из сложных стилей,
+                            требующих особого мастерства, так как, помимо внешнего сходства и красивого оформления,
+                            всегда необходимо передать настроение.
+                        </div>
+                        <div class="other-styles__slider-slide--price">от <span class="text-orange">30$</span></div>
+                        <div class="examples-clients__slider-item--button other-styles__slider-slide--button scroll-to-form">Заказать</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__steps-order">
+        <div class="wrapper">
+            <div class="section__title section__title--light">Этапы оформления заказа</div>
+            <div class="steps-order__subtitle">Заказать фото на холсте — легко и быстро!</div>
+            <div class="steps-order__upper-content">
+                <div class="steps-order__upper--item">
+                    <img class="steps-order__upper--item-img lozad" data-src="6d405ddb8b94bca9b937.png"
+                         alt="Таймер 1">
+                    <div class="steps-order__upper--item-text">Экспресс: 1 день</div>
+                </div>
+                <div class="steps-order__upper--item">
+                    <img class="steps-order__upper--item-img lozad" data-src="01170a64d945dbac536b.svg"
+                         alt="Таймер 2">
+                    <div class="steps-order__upper--item-text">Стандарт: 3-8 дней</div>
+                </div>
+            </div>
+            <div class="steps-order__bottom-content">
+                <div class="steps-order__bottom--item">
+                    <div class="steps-order__bottom--item-num">1</div>
+                    <img class="steps-order__bottom--item-img lozad" alt="шаг 1" data-src="5f1db47ffb9bb827ebd2.png">
+                    <div class="steps-order__bottom--item-title">Фото</div>
+                    <div class="steps-order__bottom--item-text">
+                        Кликните «Заказать холст»,
+                        загрузите Ваше фото
+                        и укажите желаемые параметры холста
+                    </div>
+                </div>
+                <div class="steps-order__bottom--item">
+                    <div class="steps-order__bottom--item-num">2</div>
+                    <img class="steps-order__bottom--item-img lozad" alt="шаг 2" data-src="85410024adb2b5ebfb40.png">
+                    <div class="steps-order__bottom--item-title">Обсуждение</div>
+                    <div class="steps-order__bottom--item-text">
+                        Мы связываемся с Вами
+                        для обсуждение сюжета
+                        с художником.
+                        (Сразу платить не надо)
+                    </div>
+                </div>
+                <div class="steps-order__bottom--item">
+                    <div class="steps-order__bottom--item-num">3</div>
+                    <img class="steps-order__bottom--item-img lozad" alt="шаг 3" data-src="5073193b7b3c18cfd9ff.png">
+                    <div class="steps-order__bottom--item-title">Портрет</div>
+                    <div class="steps-order__bottom--item-text">
+                        После согласования нужно внести авансовый платёж 20% или 100% Художник рисует портрет.
+                    </div>
+                </div>
+                <div class="steps-order__bottom--item">
+                    <div class="steps-order__bottom--item-num">4</div>
+                    <img class="steps-order__bottom--item-img lozad" alt="шаг 4" data-src="9919adff45875bffeb6b.png">
+                    <div class="steps-order__bottom--item-title">Изготовление</div>
+                    <div class="steps-order__bottom--item-text">
+                        После утверждение
+                        и корректировки портрета.Приступаем
+                        к изготовлению Вашего холста!
+                    </div>
+                </div>
+                <div class="steps-order__bottom--item">
+                    <div class="steps-order__bottom--item-num">5</div>
+                    <img class="steps-order__bottom--item-img lozad" alt="шаг 5" src="cf6174b48f2a1ed35db8.png">
+                    <div class="steps-order__bottom--item-title">Доставка</div>
+                    <div class="steps-order__bottom--item-text">
+                        Оперативно доставляем заказ прямо к Вашему
+                        дому или в любое
+                        другое место.
+                    </div>
+                </div>
+            </div>
+            <div class="steps-order__button-order scroll-to-form">
+                <div class="steps-order__button-order--title">Оформить заказ</div>
+                <div class="steps-order__button-order--text">
+                    Нажмите здесь и Вам откроится форма заказа с удобным конструктором и калькулятором!
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__examples-clients">
+        <div class="wrapper">
+            <div class="section__title section__title--dark">Примеры работ наших клиентов</div>
+            <div class="examples-clients__subtitle">У нас можно заказать любую картину</div>
+            <div class="examples-clients__slider">
+                <div class="examples-clients__slider-item">
+                    <img class="examples-clients__slider-item--image lozad" data-src="78b09b58a13e1e4fbfd9.jpg" alt="image">
+                    <div class="examples-clients__slider-item--title">Портрет бьюти шарж</div>
+                    <div class="examples-clients__slider-item--subtitle">100х70см</div>
+                    <div class="examples-clients__slider-item--button scroll-to-form">Хочу такой же себе</div>
+                </div>
+                <div class="examples-clients__slider-item">
+                    <img class="examples-clients__slider-item--image lozad" data-src="a97375de97cd026364cd.jpg" alt="image">
+                    <div class="examples-clients__slider-item--title">Портрет бьюти шарж</div>
+                    <div class="examples-clients__slider-item--subtitle">100х70см</div>
+                    <div class="examples-clients__slider-item--button scroll-to-form">Хочу такой же себе</div>
+                </div>
+                <div class="examples-clients__slider-item">
+                    <img class="examples-clients__slider-item--image lozad" data-src="2a5050b8dc62e566a1a8.jpg" alt="image">
+                    <div class="examples-clients__slider-item--title">Портрет бьюти шарж</div>
+                    <div class="examples-clients__slider-item--subtitle">100х70см</div>
+                    <div class="examples-clients__slider-item--button scroll-to-form">Хочу такой же себе</div>
+                </div>
+                <div class="examples-clients__slider-item">
+                    <img class="examples-clients__slider-item--image lozad" data-src="ac22f091be65a4a43b1d.jpg" alt="image">
+                    <div class="examples-clients__slider-item--title">Портрет бьюти шарж</div>
+                    <div class="examples-clients__slider-item--subtitle">100х70см</div>
+                    <div class="examples-clients__slider-item--button scroll-to-form">Хочу такой же себе</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__video">
+        <div class="wrapper">
+            <div class="video__content">
+                <div class="video__content--title">
+                    Посмотрите
+                    <br>60-секундное
+                    <br>видео и узнайте,
+                </div>
+                <div class="video__content--subtitle">
+                    как художник нарисует вашу картину
+                </div>
+            </div>
+            <div class="video__image">
+                <img class="lozad" data-src="853ca1098aad0a4ca119.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+    <section class="section__help-designer">
+        <div class="wrapper">
+            <div class="section__title section__title--dark">Бесплатная помощь дизайнера</div>
+            <div class="examples-clients__subtitle">Всё проще и доступнее чем кажется</div>
+            <div class="help-designer__info">
+                <div class="help-designer__info-column">
+                    <div class="help-designer__info-item">
+                        <img class="lozad" data-src="7dd0b645309330b94b08.svg" alt="image">
+                        <div class="help-designer__info-item--text">
+                            <span class="text-orange">У Вас есть сомнения?</span>
+                            Мы поможем найти лучшее решение и предложим профессиональный совет
+                        </div>
+                    </div>
+                    <div class="help-designer__info-item">
+                        <img class="lozad" data-src="7dd0b645309330b94b08.svg" alt="image">
+                        <div class="help-designer__info-item--text">
+                            <span class="text-orange">Широкие возможности.</span>
+                            Для Вас создадим один или несколько макетов, учитывая индивидуальные
+                            особенности фотографии.
+                        </div>
+                    </div>
+                </div>
+                <div class="help-designer__info-column reverse">
+                    <div class="help-designer__info-item">
+                        <img class="lozad" data-src="7dd0b645309330b94b08.svg" alt="image">
+                        <div class="help-designer__info-item--text">
+                            <span class="text-orange">Идеальный результат.</span>
+                            Для всех заказов мы вносим правки, пока Вы не скажите - ДА!
+                        </div>
+                    </div>
+                    <div class="help-designer__info-item">
+                        <img class="lozad" data-src="7dd0b645309330b94b08.svg" alt="image">
+                        <div class="help-designer__info-item--text">
+                            <span class="text-orange">Любые идеи и пожелания.</span> Пожалуйста свяжитесь с наши для получения более подробной
+                            информации.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="help-designer__form">
+                <div class="help-designer__form-inner">
+                    <div class="help-designer__form-title">Опишите проблему и мы предложим вам решение</div>
+                    <div class="help-designer__form-inputs">
+                        <div class="help-designer__form-element">
+                            <label for="email">Укажите Ваш E-mail</label>
+                            <input class="help-designer__form-input" id="email" type="email" placeholder="E-mail" />
+                        </div>
+                        <div class="help-designer__form-element">
+                            <label for="phone">Укажите Ваш номер телефона</label>
+                            <input class="help-designer__form-input" id="phone" type="text" placeholder="+375" />
+                        </div>
+                        <div class="help-designer__form-element">
+                            <label for="comment">Добавьте комментарий</label>
+                            <textarea class="help-designer__form-input" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <button class="examples-clients__slider-item--button send-form">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__questions">
+        <div class="wrapper">
+            <div class="questions__info">
+                <div class="questions__info__title">
+                    Часто
+                    <br>задаваемые
+                    <br>вопросы
+                </div>
+                <div class="questions__info__block">
+                    <div class="questions__info__block-inner">
+                        <div class="questions__info__block-inner--title">Все еще есть сомнения?</div>
+                        <div class="questions__info__block-inner--text">
+                            Менеджер с удовольствием ответит на все ваши вопросы в мессенджере
+                        </div>
+                        <div class="examples-clients__slider-item--button questions__info__block-inner--button">Написать WhatsApp</div>
+                    </div>
+                </div>
+            </div>
+            <div class="questions__answers">
+                <div class="questions__answers-item">
+                    <div class="questions__answers-item--button"></div>
+                    <div class="questions__answers-item--content">
+                        <div class="questions__answers-item--text">
+                            А вдруг работа мне не понравится? И я не доволен работой могу ли я вернуть холст или багет?
+                        </div>
+                        <div class="questions__answers-item--hidden-text">
+                            Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей
+                            просьбе. Конечно если работа не была испорчена (порвана, поцарапана, или разбита).
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__answers-item">
+                    <div class="questions__answers-item--button"></div>
+                    <div class="questions__answers-item--content">
+                        <div class="questions__answers-item--text">
+                            А вдруг работа мне не понравится? И я не доволен работой могу ли я вернуть холст или багет?
+                        </div>
+                        <div class="questions__answers-item--hidden-text">
+                            Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей
+                            просьбе. Конечно если работа не была испорчена (порвана, поцарапана, или разбита).
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__answers-item">
+                    <div class="questions__answers-item--button"></div>
+                    <div class="questions__answers-item--content">
+                        <div class="questions__answers-item--text">
+                            А вдруг работа мне не понравится? И я не доволен работой могу ли я вернуть холст или багет?
+                        </div>
+                        <div class="questions__answers-item--hidden-text">
+                            Если работа Вам по какой-то причине не понравится, мы вернем все деньги по первой Вашей
+                            просьбе. Конечно если работа не была испорчена (порвана, поцарапана, или разбита).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer__upper">
+        <div class="wrapper">
+            <div class="footer__upper__col-main">
+                <div class="logo">
+                    <img class="lozad" data-src="27eab2fa6b911f84d3f1.svg" alt="Лого">
+                </div>
+                <div class="footer__upper__col-main-item">
+                    <div class="footer__upper__col-main-item--text">
+                        +371 270444470
+                    </div>
+                </div>
+                <div class="footer__upper__col-main-item">
+                    <div class="footer__upper__col-main-item--text">
+                        orders@viarcanvas.com
+                    </div>
+                </div>
+                <div class="footer__upper__col-main-item">
+                    <div class="footer__upper__col-main-item--text">
+                        Riga, Lubanas 65, LV1073
+                        Daugavpils, Stacijas 129R,
+                        LV5401
+                    </div>
+                </div>
+            </div>
+            <div class="footer__upper__col-links">
+                <div class="footer__upper__col-links--title">СТИЛИ ПОРТРЕТА</div>
+                <div class="footer__upper__col-links--list">
+                    <a href="#" class="footer__upper__col-links--list-item">пЕЧАТЬ ФОТО НА ХОЛСТЕ</a>
+                    <a href="#" class="footer__upper__col-links--list-item">пОРТЕРТ ПО ФОТО</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Каталог готовых картин</a>
+                    <a href="#" class="footer__upper__col-links--list-item">карикатура/шарж</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Модульные картины</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Дигитальный портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Портрет маслом и акрилом</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Репродукции художников</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Коллаж на холсте</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Портрет в образе</a>
+                </div>
+            </div>
+            <div class="footer__upper__col-links">
+                <div class="footer__upper__col-links--title">Виды портрета</div>
+                <div class="footer__upper__col-links--list">
+                    <a href="#" class="footer__upper__col-links--list-item">Женский портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Мужской портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Парный портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Семейный портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Свадебный портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Портрет родителей</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Портрет руководителя</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Портрет на юбилей</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Детский портрет</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Портрет питомца</a>
+                </div>
+            </div>
+            <div class="footer__upper__col-links">
+                <div class="footer__upper__col-links--title">Информация</div>
+                <div class="footer__upper__col-links--list">
+                    <a href="#" class="footer__upper__col-links--list-item">Подарочная карта</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Оплата и доставка</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Акции</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Сервис клиента</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Советы и идеи</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Все стили</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Размеры и цены</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Обрамление картин</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Контакты</a>
+                    <a href="#" class="footer__upper__col-links--list-item">Вопросы и ответы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="wrapper">
+            <div class="footer__copyright">
+                © 2024 VIARCANVAS ®
+            </div>
+            <div class="footer__brands">
+                <img class="lozad" data-src="737ffd0b43dfae4ad2d8.svg" alt="VISA">
+                <img class="lozad" data-src="d6d75c539c3affbe22a5.svg" alt="MASTERCARD">
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="v-up">
+    <svg width="24" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 451.85 257.57">
+        <path d="M225.92,0a31.54,31.54,0,0,1,22.37,9.26L442.58,203.55a31.64,31.64,0,0,1-44.75,44.75L225.92,76.39,54,248.29A31.64,31.64,0,0,1,9.27,203.54L203.55,9.26A31.53,31.53,0,0,1,225.92,0Z"/>
+    </svg>
+</div>
+</body>
+</html>
